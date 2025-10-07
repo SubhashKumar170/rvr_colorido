@@ -108,6 +108,89 @@ section h2 {
   padding-left: 10px;
   font-weight: 600;
 }
+/* Modal background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#showRoutesBtn {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Top/Bottom padding: 10px, Left/Right: 20px */
+    font-size: 15px; /* Slightly larger text */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#showRoutesBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#showRoutesBtn:active {
+    background-color: #004085; /* Even darker on click */
+    transform: scale(0.98); /* Slight shrink effect */
+}
+
+#routesTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#routesTable th, #routesTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#routesTable th {
+    background-color: #007BFF;
+    color: white;
+    text-align: left;
+}
+
+#routesTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#routesTable tr:hover {
+    background-color: #ddd;
+}
+
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
 
 table {
   width: 100%;
