@@ -16,3 +16,28 @@ window.onclick = function (event) {
     }
 };
 
+
+const leftSets = document.querySelectorAll(".left-content .event-set");
+const rightSets = document.querySelectorAll(".right-content .event-set");
+
+let leftIndex = 0;
+let rightIndex = 0;
+
+function rotateEvents() {
+  leftSets.forEach(set => set.classList.remove("active"));
+  rightSets.forEach(set => set.classList.remove("active"));
+
+  leftSets[leftIndex].classList.add("active");
+  rightSets[rightIndex].classList.add("active");
+
+  leftIndex = (leftIndex + 1) % leftSets.length;
+  rightIndex = (rightIndex + 1) % rightSets.length;
+}
+
+setInterval(rotateEvents, 2000);
+rotateEvents();
+
+
+
+
+
