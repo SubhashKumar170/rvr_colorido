@@ -508,15 +508,10 @@ tr:hover {
   color: #ee0979;
 }
 
-/* Classic Schedule Table */
 .classic-schedule {
   width: 100%;
   border-collapse: collapse;
   font-family: Georgia, serif;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #fdfdfd;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .classic-schedule th,
@@ -530,7 +525,6 @@ tr:hover {
   background-color: #a8dadc; /* pastel teal */
   color: #1a1a1a;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .classic-schedule tr:nth-child(even) {
@@ -543,7 +537,6 @@ tr:hover {
 
 .classic-schedule tr:hover {
   background-color: #cde7f0; /* soft pastel blue */
-  transition: background-color 0.3s ease;
 }
 
 .classic-schedule td {
