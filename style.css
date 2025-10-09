@@ -10,6 +10,118 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+  .marquee-text {
+    color: #00eaff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #00eaff, 0 0 20px #00eaff;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    }
+  }
+
+.events-section {
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.events-section h1 {
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #00eaff;
+  margin-bottom: 50px;
+  text-shadow: 0 0 15px #00eaff, 0 0 30px #ff00ff;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 234, 255, 0.4);
+  border-radius: 20px;
+  padding: 25px;
+  width: 300px;
+  min-height: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+}
+
+.view {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #ff00ff, #00eaff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 0, 255, 0.4), 0 4px 15px rgba(0, 234, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.view :hover {
+  background: linear-gradient(90deg, #00eaff, #ff00ff);
+  box-shadow: 0 6px 20px rgba(255, 0, 255, 0.6), 0 6px 20px rgba(0, 234, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(255, 0, 255, 0.4), 0 2px 10px rgba(0, 234, 255, 0.4);
+}
+
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 234, 255, 0.5);
+}
+
+.event-card h2 {
+  color: #ff00ff;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+.event-card p {
+  color: #ddd;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+  white-space: pre-line; /* preserves your line breaks */
+  padding: 10px;
+  background: rgba(0, 234, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid #00eaff;
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover p {
+  background: rgba(0, 234, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.4);
+}
+
+
 /* Navbar */
 nav {
   display: flex;
@@ -172,7 +284,7 @@ section h2 {
   top: 50%;
   transform: translateY(-50%);
   width: 25%;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   font-weight: bold;
   color: white;
   line-height: 1.8;
@@ -395,3 +507,68 @@ tr:hover {
 .staff-coordinators ul li strong {
   color: #ee0979;
 }
+
+.classic-schedule-section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  background: #fdfdfd;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.classic-schedule-section h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+  font-family: Georgia, serif;
+}
+
+.day-title {
+  font-size: 24px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #5a5a5a;
+  font-family: Georgia, serif;
+  font-weight: bold;
+}
+
+.classic-schedule {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Georgia, serif;
+}
+
+.classic-schedule th,
+.classic-schedule td {
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.classic-schedule th {
+  background-color: #a8dadc; /* pastel teal */
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.classic-schedule tr:nth-child(even) {
+  background-color: #f1faee; /* light pastel green */
+}
+
+.classic-schedule tr:nth-child(odd) {
+  background-color: #ffe5d9; /* light pastel peach */
+}
+
+.classic-schedule tr:hover {
+  background-color: #cde7f0; /* soft pastel blue */
+}
+
+.classic-schedule td {
+  font-size: 16px;
+}
+
