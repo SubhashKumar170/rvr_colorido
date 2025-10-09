@@ -508,39 +508,15 @@ tr:hover {
   color: #ee0979;
 }
 
-.classic-schedule-section {
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto;
-  background: #fdfdfd;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 50px;
-}
-
-.classic-schedule-section h1 {
-  text-align: center;
-  font-size: 32px;
-  color: #3a3a3a;
-  margin-bottom: 30px;
-  font-family: Georgia, serif;
-}
-
-.day-title {
-  font-size: 24px;
-  text-align: left;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  color: #5a5a5a;
-  font-family: Georgia, serif;
-  font-weight: bold;
-}
-
+/* Classic Schedule Table */
 .classic-schedule {
   width: 100%;
   border-collapse: collapse;
   font-family: Georgia, serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .classic-schedule th,
@@ -554,6 +530,7 @@ tr:hover {
   background-color: #a8dadc; /* pastel teal */
   color: #1a1a1a;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .classic-schedule tr:nth-child(even) {
@@ -566,9 +543,9 @@ tr:hover {
 
 .classic-schedule tr:hover {
   background-color: #cde7f0; /* soft pastel blue */
+  transition: background-color 0.3s ease;
 }
 
 .classic-schedule td {
   font-size: 16px;
 }
-
